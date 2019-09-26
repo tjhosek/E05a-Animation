@@ -16,7 +16,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Move with a Sprite Animation Example"
 
-COIN_SCALE = 0.5
+COIN_SCALE = 2
 COIN_COUNT = 50
 
 MOVEMENT_SPEED = 5
@@ -56,7 +56,7 @@ class MyGame(arcade.Window):
         self.score = 0
         self.player = arcade.AnimatedWalkingSprite()
 
-        character_scale = 0.75
+        character_scale = 3
         self.player.stand_right_textures = []
         self.player.stand_right_textures.append(arcade.load_texture("images/character_sprites/character0.png",
                                                                     scale=character_scale))
@@ -90,7 +90,7 @@ class MyGame(arcade.Window):
 
         self.player.center_x = SCREEN_WIDTH // 2
         self.player.center_y = SCREEN_HEIGHT // 2
-        self.player.scale = 0.8
+        self.player.scale = 3 
 
         self.player_list.append(self.player)
 
@@ -98,6 +98,7 @@ class MyGame(arcade.Window):
             coin = arcade.AnimatedTimeSprite(scale=0.5)
             coin.center_x = random.randrange(SCREEN_WIDTH)
             coin.center_y = random.randrange(SCREEN_HEIGHT)
+
 
             coin.textures = []
             coin.textures.append(arcade.load_texture("images/gold_1.png", scale=COIN_SCALE))

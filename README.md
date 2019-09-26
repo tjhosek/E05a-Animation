@@ -1,1 +1,1 @@
-A few programs to describe basic animation. Main1 moves a sprite based on mouse input, while main2 moves a sprite based on the directional keys.
+A few programs to describe basic animation. Main1 moves a sprite based on mouse input, while main2 moves a sprite based on the directional keys. Main 3 has custom sprites for the character and the coins.
